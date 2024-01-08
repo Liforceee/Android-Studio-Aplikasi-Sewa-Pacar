@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Dasboard"
+        android:textStyle="bold"
+        android:background="@color/design_default_color_secondary"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome Sewa Pacar"
+            android:textAlignment="center"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            >
+        </TextView>
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/pacar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="90dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Klik pilihan :"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFC0CB"
+                android:onClick="tombol_info"
+                android:text="INFORMASI TALENT"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/btn_sewa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="tombol_sewa"
+                android:text="SEWA PACAR"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/btn_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="tombol_contact"
+                android:text="Contact"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
